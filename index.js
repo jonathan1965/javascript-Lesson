@@ -14,6 +14,34 @@
 // let selectedColor= null;
  
 // reference Type
+    // Object
+
+// let name= "Jonathan";
+// let age = 30;
+// let person = {
+//     name:"kalisa",
+//     age:30
+// }
+
+// let = person.age = 50;
+
+// // blacket notstion 
+
+// person['name'] = 'Maamy';
+
+// console.log(person['name'])
+
+// // other example of propertios
+
+// let selector = "name"
+// person[selector]="joghDo"
+// console.log(person['name'])
+
+
+
+
+//  Array 
+
 
 
 
