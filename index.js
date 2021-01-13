@@ -40,9 +40,9 @@
 
 
 
-//  Array 
+//  Array  
 
+let selectedColors = ['red','blue','']
+   selectedColors [2]= "joka" 
 
-
-
-
+console.log(selectedColors.length)
