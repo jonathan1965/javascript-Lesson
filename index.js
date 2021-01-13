@@ -42,7 +42,37 @@
 
 //  Array  
 
-let selectedColors = ['red','blue','']
-   selectedColors [2]= "joka" 
+// let selectedColors = ['red','blue','']
+//    selectedColors [2]= "joka" 
 
-console.log(selectedColors.length)
+// console.log(selectedColors.length)
+
+
+// Function
+
+
+
+// function greet(name) {
+//      console.log('John Doe');
+// }
+
+// greet(); 
+
+
+// // 2.Performing atask
+// function greet(name,lastname) { // name is a parameters
+//      console.log('hello ' + name + ' ' + lastname);
+// }
+// greet('john','kalisa');  // John lastnameis an arguiment
+
+
+
+// 3.calculate a value
+
+// function square(number){
+//     return number*number;
+    
+// }
+ 
+//  console.log(square(2));
+
