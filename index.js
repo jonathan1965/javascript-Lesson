@@ -1,162 +1,215 @@
-// Operators 
-
-
-// Arithmetic
-// Assignment
-// comparison
-// logical
-// bitwise
-
-
-// 1.Aritmetic Operators
-
-// let x=10;
-// let y=3;
-
-// console.log(x+y)
-// console.log(x-y)
-// console.log(x%y)
-// console.log(x/y)
-// console.log(x*y)
-// console.log(x**y)
-
-
-//increament (+++)
-
-// console.log(x++)
-// console.log(x)
-
-// // Decreament
-
-// console.log(--x)
-
-
-
-
-//  2.Assigmnet Operators
-
-// let x= 10; 
-// x+=5;
-// console.log(x)
-
-    // /Relationa
-
-// let x = 1;
-// console.log(x>=0);
-// console.log(x>=1);
-// console.log(x<1);
-// console.log(x<=1);
-
-
-
-  // Equality
-//   console.log(x===1);
-//   console.log(x!==1);
-
-//   strict Equality Operator (same type and same value)
-//  console.log(1===1)
-//  console.log(1==="1")
+// Hour
+// If hour is between 6am and 12pm : Good everning
+// if it is between 12pm and 6pm: Good afternoon!
+// otherwise:Good everning
  
-// //  Lose Equality operator
-//  console.log(1==1)
-//  console.log(1=="1")
-//  console.log(1==true)
 
 
-    //  3.Ternary Operator
+// let hour = 15;
+   
+//  if (hour>=6 && hour < 12){
+//      console.log("Good morning")
+//     }
+
+//     else if (hour <= 6 || hour <+12){
+//         console.log('Good everning')
+//     }
+
+//     else {
+//         console.log('wait the eve')
+//     }
 
 
-
-// if a customer has more than 100 points,
-//  they are a gold customer otherwise
-//  they are silver customer
-
-// let point = 101;
-// let type = point>100 ? 'gold' : 'silver';
-
-// console.log(type);
+                     // switch and else
 
 
-// 4.logical operators
+// let role = 'guest'; 
 
-// Logical And (&&) Returns True if both operands are true
-// Logical or (||) this returns  true when one in the  operands is TRUE
-// 
+// switch (role){
 
-// console.log(true && true)
+//     case 'guest':
+//         console.log('Guest User');
+//         break;
+//     case 'moderator':
+//             console.log('Moderator');
+//          break;
+
+//      default: 
+//      console.log('Unknown User');   
+// }
+
+
+                // For
+
+
+// for (let i =0; i< 5; i++) {
+//      console.log('k',i)
+// }
+
+// for (let i =5; i > 1; i--) {
+//     console.log(i)
+// }
+
+// for (let i =0; i<= 5; i++) {
+//     if (i%2 !== 0 ){
+//         console.log(i)
+
+//     }
+// }
+
+
+             // while
+// let i=0;
+//  while(i<5){
+//     if( i %2 !==0) console.log(i); 
+//     i++;  
+//  }
  
-// let highIncome = false;
-// let goodreditScore= false;
 
-// // let eligibleForLoan = highIncome && goodreditScore;
-
-// let eligibleForLoan = highIncome || goodreditScore;
-
-
-
-// // Logical NOT (!) Returns True if both operands are true
-
-// let applicationRefused = !eligibleForLoan;
-// console.log(applicationRefused);
+               // Do-While
+               
+//  let i=0;
+//  do {
+//     console.log(i);
+//     i++;
+//  }
+//  while(i<5)
 
 
-    //  Logical Operators
 
-    //  this are falsey value  
+    //   infinity loop some time you forget a icreamentarion
 
-     // falsy (false)
-     // underfined
-     // null
-     // 0
-     //  false
-     // ''
-     // NaN
+          //   for-in
+
+// const person = {
+//     name:'mosh',
+//     age: 30
+// };
+
+// for (let key in person )
+//    console.log(key, person[key])
+
+
+//    const colors= ['red','green','blue']
+//     for (let index in colors)
+//     console.log(colors[index])
+
+     //   for-of
+
+
+    //  for (let color of colors)
+    // console.log(color)
+
+
+    //  break and condition
+
+    // let i = 0;
+    // while (i<= 10){
+    //     if(i === 5) break;
+    //   console.log(i)
+    //   i++
+    // }
+
+    // let i = 0;
+
+    // while (i<10) {
+    //     if( i % 2 === 0){
+    //         i++;
+    //         continue;
+    //     }
+    //     console.log(i)
+    //     i++;
+    // }
+
+            // Function exerxises 13
+
     
-//   Bitwise Operators
 
-//  1 =   00000001
-//  2 =   00000010
-//  3 =   00000011
+    //   function showNumbers(limit){
 
-//  console.log( 1|2 ) //Bitwise OR
-//  console.log( 1&2 ) //Bitwise AND
+    //     for (let i =0; i<=limit ; i++) {
 
-// READ, Write , Execute
+    //         if (i % 2 ===0) 
+    //       console.log(i,'even')
+    //       else console.log(i,'odd')
+    //     } 
 
-// 00000100
-// 00000110
-// 00000111
+    //   }
+
+    //  showNumbers(11)
+ 
+      // Function exerxises 13
+
+//       function max (a,b) {
+
+//           if (a<b)
+//           console.log(b)
+//           else console.log(a)
+//       } 
+
+//      max(15,5);
+
+//      let number = max (6,5)
+//      console.log(number)
+
+//    function max (a,b) {
+//        return (a>b) ? a : b;
+//    }
+
+          //     function exercises 14
+
+// const output = fizzbuzz(15)
+// console.log(output)
+//  function fizzbuzz(input) {
+
+//   if (typeof input !== "number" )
+//   return 'is not number' 
+//   if ( (input % 3 ===0) && (input % 5 === 0)) return ('fizzbizz')
+//   if ( input % 3===0) return ('fizz')
+//   if ( input % 5===0) return ('bizz')
+
+//   return input;
+
+//  }
+
+
+    //     function exercises 15
+
+    // function isLandscape(width,height) {
+    //     return (width>height) ? width : height
+    // }
+    // console.log(isLandscape(4,5))
+
+//    function isMath(width, height) {
+//         if (width > height)
+//          return
+//     }
+//     isMath(9,5)
+//     console.log('height is heigh')
+ 
+// function  isLandscape(width,height){
+//     return (width>height) 
+// }
+
+// console.log(isLandscape(5,3))
+
+function checkSpeed(speed) {
+      
+    for (let i= 0 ; i<=speed; i++)
+     if (i<=70) return;
+     
+      
+     
+}
+
+checkSpeed(70)
+console.log('ok')
+
  
 
-// const readPermision = 4;
-// const writePermission = 2;
-// const executePermision = 1;
-
-// let myPermission =0;
-// myPermission = myPermission | readPermision | writePermission;
-
-// let message = (myPermission & readPermision) ? 'yes' : 'no';
-
-// console.log(message)
-
-//  5. operator Precedence
-
-    // let x = 2 + 3 * 4;
-
-    // console.log (x)
-
-    //  Exercises
-
-    //  let a = 'red';
-    //   let b = 'blue';
-       
-    //   let c=a;
-    //       a=b;
-    //       b=c;
-
-    //   console.log(a);
-    //   console.log(b);
 
 
 
+   
+     
 
