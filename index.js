@@ -240,7 +240,7 @@
 //         console.log('ok');
 //         return;
 //     }
-     
+
 //     let points = Math.floor((speed - speedLimit) / kmPerPoint);
 //     if (points >= 12)
 //         console.log('Licence suspended')
@@ -252,7 +252,7 @@
 // checkSpeed()
 
 
-        //  exercises 14
+//  exercises 14
 
 // showNumbers(10);
 
@@ -269,14 +269,14 @@
 //      let message = (i %2 === 0) ? 'Even' : 'odd'
 //      console.log(i,message)
 //     }
-     
+
 // }
 
 // showNumbers(10)
 
 
-         // exercises 15
-       
+// exercises 15
+
 //  const array = [0,null,undefined,'',2,3]  
 //  console.log(countTruthy(array))      
 // function countTruthy(array){
@@ -290,7 +290,7 @@
 // }
 
 
-        // exercises 16
+// exercises 16
 
 //  const movie= {
 //      title: 'a',
@@ -302,9 +302,28 @@
 //  showProperties(movie)
 
 // function showProperties(obj){
-   
+
 //      for (let key in obj)
 
 //      if (typeof obj[key] === 'string')
 //       console.log(key, obj[key])
 // }
+
+
+// exercises 17
+// Multiple of 3:3,6,9
+// Multiple of 5:5,10
+
+
+console.log(sum(10));
+
+
+function sum(limit) {
+    let sum = 0;
+    
+    for (let i = 0; i <= limit; i++)
+        if (i % 3 === 0 || i % 5 === 0)
+            sum += i
+
+    return sum;
+}
