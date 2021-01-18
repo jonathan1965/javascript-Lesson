@@ -310,7 +310,7 @@
 // }
 
 
-             // exercises 17
+// exercises 17
 
 // Multiple of 3:3,6,9
 // Multiple of 5:5,10
@@ -329,7 +329,7 @@
 //     return sum;
 // }
 
-        // Exercises 18
+// Exercises 18
 
 //  0-59: F
 //  60-69:D
@@ -346,7 +346,7 @@
 //     let sum = 0
 //     for  (let mark of marks)
 //     sum+= mark; 
-    
+
 //     let average = sum / marks.lenght;
 //     if (average <60  ) return 'f'
 //     if (average <70  ) return 'D'
@@ -354,26 +354,69 @@
 //     if (average <90  ) return 'B'
 //     else return 'A'
 // }
-          
 
-         // simple function
-const marks = [80,80,50]
-console.log(calculateGrade(marks));
 
-function calculateGrade(marks){
-    
-     const average = calculateAverage(marks); 
-    if (average <60  ) return 'f'
-    if (average <70  ) return 'D'
-    if (average <80  ) return 'C'
-    if (average <90  ) return 'B'
-    else return 'A'
+// simple function answer
+// const marks = [80,80,50]
+// console.log(calculateGrade(marks));
+
+// function calculateGrade(marks){
+
+//      const average = calculateAverage(marks); 
+//     if (average <60  ) return 'f'
+//     if (average <70  ) return 'D'
+//     if (average <80  ) return 'C'
+//     if (average <90  ) return 'B'
+//     else return 'A'
+// }
+
+
+// function calculateAverage(array){
+//     let sum = 0
+//     for  (let value of array)
+//     sum +=  value; 
+//     return sum / marks.lenght;
+// } 
+
+
+// exercise 19
+
+// Prime (whose factors are only 1 and itself)
+//   11 = 1,11
+//   13 = 1,13
+//   or it can be Composite
+
+// showPrime(20)
+
+// function showPrime(limit) {
+//     for (let number = 2; number <= limit; number++) {
+
+//         let isPrime = true;
+//         for (let factor = 2; factor < number; factor++) {
+//             if (number % factor === 0) {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if (isPrime) console.log(number)
+//     }
+
+// }
+
+// new way function
+
+
+showPrime(20)
+
+function showPrime(limit) {
+    for (let number = 2; number <= limit; number++)
+
+        if (isPrime(number))
+            console.log(number)
 }
-
-
-function calculateAverage(array){
-    let sum = 0
-    for  (let value of array)
-    sum +=  value; 
-    return sum / marks.lenght;
-} 
+    function isPrime(number) {
+        for (let factor = 2; factor < number; factor++)
+            if (number % factor === 0)
+                return false;
+        return true;
+    }
