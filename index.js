@@ -211,41 +211,54 @@
 // checkSpeed(70)
 // console.log('ok')
 
-function checkSpeed(speed) {
-    const speedLimit = 70;
-    const kmPerPoint = 5;
+// function checkSpeed(speed) {
+//     const speedLimit = 70;
+//     const kmPerPoint = 5;
 
-    if (speed < speedLimit + kmPerPoint)
-        console.log('ok')
-    else {
-        let points = Math.floor((speed - speedLimit) / kmPerPoint);
-        if (points >= 12)
-            console.log('Licence suspended')
-        else
-            console.log('Points', points)
-    }
+//     if (speed < speedLimit + kmPerPoint)
+//         console.log('ok')
+//     else {
+//         let points = Math.floor((speed - speedLimit) / kmPerPoint);
+//         if (points >= 12)
+//             console.log('Licence suspended')
+//         else
+//             console.log('Points', points)
+//     }
 
-}
+// }
 
 checkSpeed()
 
 // make code clearner
 
 
-function checkSpeed(speed) {
-    const speedLimit = 70;
-    const kmPerPoint = 5;
+// function checkSpeed(speed) {
+//     const speedLimit = 70;
+//     const kmPerPoint = 5;
 
-    if (speed < speedLimit + kmPerPoint) {
-        console.log('ok');
-        return;
-    }
+//     if (speed < speedLimit + kmPerPoint) {
+//         console.log('ok');
+//         return;
+//     }
      
-    let points = Math.floor((speed - speedLimit) / kmPerPoint);
-    if (points >= 12)
-        console.log('Licence suspended')
-    else
-        console.log('Points', points)
+//     let points = Math.floor((speed - speedLimit) / kmPerPoint);
+//     if (points >= 12)
+//         console.log('Licence suspended')
+//     else
+//         console.log('Points', points)
 
 
-}
+// }
+// checkSpeed()
+
+
+        //  exercises 14
+
+// showNumbers(10);
+
+// function showNumbers(limit) {
+//     for (let i=0; i<limit; i++)
+//      if (i %2 === 0)
+//      console.log(i,"even")
+//      else console.log(i,"odd")
+// }
