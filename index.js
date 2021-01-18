@@ -338,19 +338,42 @@
 //  90-100:A
 
 
-const marks = [80,80,50]
+// const marks = [80,80,50]
 
+// console.log(calculateGrade(marks));
+
+// function calculateGrade(marks){
+//     let sum = 0
+//     for  (let mark of marks)
+//     sum+= mark; 
+    
+//     let average = sum / marks.lenght;
+//     if (average <60  ) return 'f'
+//     if (average <70  ) return 'D'
+//     if (average <80  ) return 'C'
+//     if (average <90  ) return 'B'
+//     else return 'A'
+// }
+          
+
+         // simple function
+const marks = [80,80,50]
 console.log(calculateGrade(marks));
 
 function calculateGrade(marks){
-    let sum = 0
-    for  (let mark of marks)
-    sum+= mark; 
     
-    let average = sum / marks.lenght;
+     const average = calculateAverage(marks); 
     if (average <60  ) return 'f'
     if (average <70  ) return 'D'
     if (average <80  ) return 'C'
     if (average <90  ) return 'B'
     else return 'A'
 }
+
+
+function calculateAverage(array){
+    let sum = 0
+    for  (let value of array)
+    sum +=  value; 
+    return sum / marks.lenght;
+} 
