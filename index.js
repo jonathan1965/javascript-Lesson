@@ -193,17 +193,42 @@
 
 // console.log(isLandscape(5,3))
 
-function checkSpeed(speed) {
+
+    // exercises 13
+
+// speed Limit = 70 
+// 5-> 1 point
+// Math.floor(1.3)
+// 12 points -> suspended
+
+// function checkSpeed(speed) {
       
-    for (let i= 0 ; i<=speed; i++)
-     if (i<=70) return;
+//     for (let i= 0 ; i<=speed; i++)
+//      if (i<=70) return;
      
-      
+// }
+
+// checkSpeed(70)
+// console.log('ok')
+
+function checkSpeed(speed) {
+   const speedLimit=70;
+   const kmPerPoint= 5;
+
+   if (speed < speedLimit + kmPerPoint)
+    console.log('ok')
+    else {
+       let points= Math.floor((speed - speedLimit) / kmPerPoint);
+       if (points >=12)
+       console.log ('Licence suspended')
+       else
+        console.log('Points',points)
+    }
      
 }
 
-checkSpeed(70)
-console.log('ok')
+checkSpeed()
+
 
  
 
