@@ -227,7 +227,7 @@
 
 // }
 
-checkSpeed()
+// checkSpeed()
 
 // make code clearner
 
@@ -262,3 +262,14 @@ checkSpeed()
 //      console.log(i,"even")
 //      else console.log(i,"odd")
 // }
+
+
+// function showNumbers(limit) {
+//     for (let i=0; i<limit; i++) {
+//      let message = (i %2 === 0) ? 'Even' : 'odd'
+//      console.log(i,message)
+//     }
+     
+// }
+
+// showNumbers(10)
