@@ -144,21 +144,31 @@
 //   city
 // zipCode
 // showAddress
+  
+//     const address= {
+//         street:'kn7',
+//         city:'kabuga',
+//         zipcode:19
+//     }
+//   function showAddress() {
+//        const show = { ...address}
+//        console.log(show)
+//   }
+// showAddress()
 
+         //Good Answer
 
-    
-    const address= {
-        street:'kn7',
-        city:'kabuga',
-        zipcode:19
-    }
-  function showAddress() {
-       const show = { ...address}
-       console.log(show)
-  }
+    //          const address= {
+    //     street:'kn7',
+    //     city:'kabuga',
+    //     zipcode:19
+    //          }
+    // function showAddress(address){
+    //     for (let key in address)
+    //     console.log(key, address[key])
+    // }    
 
-
-showAddress()
+    // showAddress(address)
     
 
 
