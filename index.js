@@ -46,9 +46,43 @@
 // const circle = new Circle(1)
 // console.log(circle);
 
-const triangle = {
-    radius:1
-}
-triangle.p= 15;
-triangle.draw= function () {}
-console.log(triangle)
+// const triangle = {
+//     radius:1
+// }
+// triangle.p= 15;
+// triangle.draw= function () {}
+// console.log(triangle)
+
+       // Constructor Property
+ 
+
+    //    function Circle(radius) {
+    //        this.radius = radius;
+    //        this.draw = function () {
+    //            console.log('draw')
+    //        }
+    //    }
+     
+    //  Circle.call({},1)
+        
+    //    const another = new Circle(1)
+    //    console.log(another)
+
+
+    //  Value vs Reference
+
+    let number = 10;
+
+    function increase(number) {
+        number++;
+    }
+
+    console.log(number)
+
+    let obj = {value:10}
+
+    function increase(Obj){
+        obj.value++
+    }
+    increase();
+    console.log(obj)
