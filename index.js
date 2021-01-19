@@ -123,12 +123,43 @@
 
         // String primitive
         
-      const name= 'john'
+    //   const name= 'john'
+    // //   String object
+    // const another = new String('hi')
 
-    //   String object
+    //   // templete literal ``
+    //   const another1 =  `hi ${name} ${2+5}`
 
-    const another = new String('hi')
+   
+        // Date
 
-      // templete literal ``
-      
-      const another1 =  `hi ${name}`
+        const now = new Date();
+        const date1= new Date('May 11 2018 09:00')
+        const date2 = new Date(2018, 4, 11, 9)
+      now
+
+
+            //   Ercises 15
+  // street
+//   city
+// zipCode
+// showAddress
+
+
+    
+    const address= {
+        street:'kn7',
+        city:'kabuga',
+        zipcode:19
+    }
+  function showAddress() {
+       const show = { ...address}
+       console.log(show)
+  }
+
+
+showAddress()
+    
+
+
+
