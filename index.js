@@ -53,7 +53,7 @@
   // triangle.draw= function () {}
   // console.log(triangle)
 
-  // Constructor Property
+           // Constructor Property
 
 
   //    function Circle(radius) {
@@ -62,51 +62,59 @@
   //            console.log('draw')
   //        }
   //    }
-
   //  Circle.call({},1)
-
   //    const another = new Circle(1)
   //    console.log(another)
 
 
-                           //  Value vs Reference
+             //  Value vs Reference
 
-//   let number = 10;
+  //   let number = 10;
+  //   function increase(number) {
+  //       number++;
+  //   }
+  //   console.log(number)
+  //   let obj = {
+  //       value: 10
+  //   }
+  //   function increase(Obj) {
+  //       obj.value++
+  //   }
+  //   increase();
+  //   console.log(obj)
+  // const circle = {
+  //     radius:1,
+  //     draw(){
+  //         console.log('draw')
+  //     }
+  // }
+  // for (let key in circle)
+  //  console.log(key,circle[key])
+  //  for (let key of Object.keys(circle))
+  //  console.log(key,circle[key])
 
-//   function increase(number) {
-//       number++;
+             //   another way
+
+  // for (let entry of Object.entries(circle))
+  //   console.log(entry)
+  // if ('radius' in circle ) console.log('yes') 
+
+  
+           //  cloning an Object 
+
+
+//   const circle = {
+//       radius: 1,
+//       draw() {
+//           console.log('draw')
+//       }
 //   }
+//   const another = {};
+//   for (let key in circle)
+//       another[key] = circle[key]
+//   console.log(another)
+// const another1 = Object.assign({ },circle)
+// console.log(another1)
 
-//   console.log(number)
-
-//   let obj = {
-//       value: 10
-//   }
-
-//   function increase(Obj) {
-//       obj.value++
-//   }
-//   increase();
-//   console.log(obj)
-
-
-const circle = {
-    radius:1,
-    draw(){
-        console.log('draw')
-    }
-}
-
-for (let key in circle)
- console.log(key,circle[key])
-
- for (let key of Object.keys(circle))
- console.log(key,circle[key])
-
-    //   another way
-
-for (let entry of Object.entries(circle))
-  console.log(entry)
-
-
-if ('radius' in circle ) console.log('yes')
+// const another2 = {...circle}
+// console.log(another2)
