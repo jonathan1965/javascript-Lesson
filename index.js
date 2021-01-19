@@ -99,7 +99,7 @@
   //   console.log(entry)
   // if ('radius' in circle ) console.log('yes') 
 
-  
+
            //  cloning an Object 
 
 
@@ -118,3 +118,17 @@
 
 // const another2 = {...circle}
 // console.log(another2)
+ 
+    
+
+        // String primitive
+        
+      const name= 'john'
+
+    //   String object
+
+    const another = new String('hi')
+
+      // templete literal ``
+      
+      const another1 =  `hi ${name}`
