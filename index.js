@@ -1,4 +1,4 @@
-   //  Object-oriented Programming (OOP)
+  //  Object-oriented Programming (OOP)
     
    
  const circle = {
@@ -33,3 +33,15 @@ console.log(Circle1.draw())
 const Circle2= createCircle(20);
 console.log(Circle2)
 
+
+               //Factory Function
+
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function () {
+        console.log('draw');
+    }
+}
+
+const circle = new Circle(1)
+console.log(circle);
