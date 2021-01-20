@@ -1,4 +1,4 @@
-  //  Object-oriented Programming (OOP)
+                  //  Object-oriented Programming (OOP)
 
 
   //  const circle = {
@@ -34,7 +34,7 @@
   // console.log(Circle2)
 
 
-  //Factory Function
+                  //Factory Function
 
   // function Circle(radius){
   //     this.radius = radius;
@@ -53,7 +53,7 @@
   // triangle.draw= function () {}
   // console.log(triangle)
 
-  // Constructor Property
+                    // Constructor Property
 
 
   //    function Circle(radius) {
@@ -67,13 +67,14 @@
   //    console.log(another)
 
 
-  //  Value vs Reference
+                  //  Value vs Reference
 
   //   let number = 10;
   //   function increase(number) {
   //       number++;
   //   }
   //   console.log(number)
+
   //   let obj = {
   //       value: 10
   //   }
@@ -93,14 +94,13 @@
   //  for (let key of Object.keys(circle))
   //  console.log(key,circle[key])
 
-  //   another way
+                   //   another way
 
   // for (let entry of Object.entries(circle))
   //   console.log(entry)
   // if ('radius' in circle ) console.log('yes') 
-
-
-  //  cloning an Object 
+  
+                   //  cloning an Object 
 
 
   //   const circle = {
@@ -121,7 +121,7 @@
 
 
 
-  // String primitive
+                   // String primitive
 
   //   const name= 'john'
   // //   String object
@@ -139,7 +139,7 @@
   //   now
 
 
-  //   Ercises 15
+                          //   Ercises 15
   // street
   //   city
   // zipCode
@@ -156,7 +156,7 @@
   //   }
   // showAddress()
 
-  //Good Answer
+            //Good Answer
 
   //          const address= {
   //     street:'kn7',
@@ -168,11 +168,10 @@
   //     console.log(key, address[key])
   // }    
 
-  // showAddress(address)
+                    // showAddress(address)
 
 
   //    exercise 15  factory and constructor function
-
   // const address= {
   //     street:'kn7',
   //     city:'kabuga',
@@ -262,13 +261,25 @@
 
                 //constructor Function
 
-let post = new Post('a','b','c')
+// let post = new Post('a','b','c')
+// function Post(tittle,body,author) {
+//     this.tittle = tittle;
+//     this.body= body;
+//     this.author = author;
+//     this.views=0;
+//     this.comments=[];
+//     this.isLive= false;   
+// }
 
-function Post(tittle,body,author) {
-    this.tittle = tittle;
-    this.body= body;
-    this.author = author;
-    this.views=0;
-    this.comments=[];
-    this.isLive= false;   
-}
+                     //Price Range
+// let priceRanges = [
+//     {label:'$',tooltip:'Inexpensive',minPerson:0,maxPerPerson:10},
+//     {label:'$$',tooltip:'Modorate',minPerson:11,maxPerPerson:20},
+//     {label:'$$$',tooltip:'Expensive',minPerson:21,maxPerPerson:50}
+
+// ];
+
+// let restaurants = [
+//     {averagePerPeron:5}
+// ]
+
