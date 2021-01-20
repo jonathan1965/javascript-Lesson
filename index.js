@@ -188,11 +188,10 @@
   //         zipCode:zipCode
   //     }
   // }
-
   // const create = new createAddress (11,1,2)
 
 
-  //  exercises Construction Function
+                      //  exercises Construction Function
 
   //   function CreateAddress (street,city,zipCode ){
   //       this.street= street;
@@ -202,8 +201,7 @@
   // const call= new CreateAddress(1,2,3)
   // console.log(call)
 
-
-  // exercises object equality 3
+                   // exercises object equality 3
 
   // function Address(street,city,zipCode ){
   //     this.street= street;
@@ -231,15 +229,15 @@
   // console.log(areSame(address1,address3))
 
 
-  //     Blog Post Object
+                     //     Blog Post Object
 
-  // title
-  // body
-  // author
-  // views
-  // comments
-  // (author,body)
-  // isLive
+//   title
+//   body
+//   author
+//   views
+//   comments
+//   (author,body)
+//   isLive
 
 //   let post = {
 //       tittle: 'a',
@@ -260,4 +258,17 @@
 
 //   console.log(post);
 
-       //  constructor Function
+
+
+                //constructor Function
+
+let post = new Post('a','b','c')
+
+function Post(tittle,body,author) {
+    this.tittle = tittle;
+    this.body= body;
+    this.author = author;
+    this.views=0;
+    this.comments=[];
+    this.isLive= false;   
+}
