@@ -10,8 +10,6 @@
 
 // // Middle
 // numbers.splice(2,0,7)
-// // delete one value
-// numbers.pop(6)  
 // console.log(numbers)
 
     //     Finding Primitive
@@ -65,16 +63,53 @@
 
                   //  remove ellement from an array
 
-  const numbers  = [1,2,3,4]       
+//   const numbers  = [1,2,3,4]       
 
-  //End 
-  const last = numbers.pop()
-console.log(numbers)
-console.log(last)
+//   //End 
+//   const last = numbers.pop()
+// console.log(numbers)
+// console.log(last)
 
-//   beggining 
-  numbers.shift()
-  numbers.splice()
+// //   beggining 
+//   numbers.shift()
+//   numbers.splice()
 
-// Middle 
-numbers.splice(2)
+// // Middle 
+// numbers.splice(2)
+
+
+            //  Empty an Array
+
+   let numbers  = [1,2,3,4] 
+   let another = numbers;
+
+// solution1
+// number = [];
+
+// solution2
+//numbers.length= 0;
+
+//  Solution 3
+// numbers.splice(0,numbers.length)
+
+// solution 4
+// while(numbers.length >0){
+//     numbers.pop(); 
+    
+// }
+// console.log(numbers)
+
+
+
+        //   combine and slicing Array
+
+const first = [1,2,3];
+const second = [4,5,6,7];
+
+const combined = first.concat(second)
+// slice annaray into two part  
+
+const slice = combined.slice(2,4)
+console.log(slice)
+
+
