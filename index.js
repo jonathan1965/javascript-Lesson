@@ -80,8 +80,8 @@
 
             //  Empty an Array
 
-   let numbers  = [1,2,3,4] 
-   let another = numbers;
+//    let numbers  = [1,2,3,4] 
+//    let another = numbers;
 
 // solution1
 // number = [];
@@ -117,10 +117,21 @@
 
 
                  // const first = [1,2,3];
-const second = [4,5,6,7];
-const first = [1,2,3];
-const combined = [...first,...second]
-// slice annaray into two part  
+// const second = [4,5,6,7];
+// const first = [1,2,3];
+// const combined = [...first,...second]
+// // slice annaray into two part  
 
-const copy =  [...combined]
-console.log(copy)
+// const copy =  [...combined]
+// console.log(copy)
+  
+
+        //   iterating an array
+ 
+// const numbers = [1,2,3];
+
+// for (let number of numbers)
+// console.log(number); 
+
+// numbers.forEach((number,index)=> console.log(number,index)
+// )
