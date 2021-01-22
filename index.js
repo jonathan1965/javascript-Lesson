@@ -135,3 +135,17 @@
 
 // numbers.forEach((number,index)=> console.log(number,index)
 // )
+
+            //  joining an Array
+
+const numbers = [1,2,3];
+const joined = numbers.join(','); 
+console.log(joined);
+const message = 'This is my first  message'
+
+const parts = message.split(' ')
+const combined = parts.join('-')
+console.log(combined)
+
+
+
