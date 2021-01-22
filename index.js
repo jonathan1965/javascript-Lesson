@@ -176,17 +176,24 @@
 
                   // Testing The Element an Array
 
-const numbers = [1,-1,2,3];
+// const numbers = [1,-1,2,3];
 
 
-// every ()
-// some()
-const isPositive = numbers.every( function (value) {
-     return value >= 0;
-})
+// // every ()
+// // some()
+// const isPositive = numbers.every( function (value) {
+//      return value >= 0;
+// })
+// const atLeastOnePositive = numbers.some(function(value){
+//     return value >=0;
+// })
+// console.log(isPositive)
 
-const atLeastOnePositive = numbers.some(function(value){
-    return value >=0;
-})
 
-console.log(isPositive)
+              // Filtering  an Array
+
+     const numbers = [1,-1,2,3];
+
+    const filtered= numbers.filter( n => n >= 0)
+
+     console.log(filtered)
