@@ -190,10 +190,41 @@
 // console.log(isPositive)
 
 
-              // Filtering  an Array
+              // Filtering  an Array // ift no negativ number
 
-     const numbers = [1,-1,2,3];
+    //  const numbers = [1,-1,2,3];
 
-    const filtered= numbers.filter( n => n >= 0)
+    // const filtered= numbers.filter( n => n >= 0)
 
-     console.log(filtered)
+    //  console.log(filtered)
+
+                   // Mapping  an Array
+
+    //  const numbers = [1,-1,2,3];
+
+    //  const filtered= numbers.filter( n => n >= 0)
+
+    //  const item = filtered.map(n => '<li>' + n + '</li>' );
+ 
+    //   const html = '<ul>' + item.join('') + '</ul>';
+
+    //  console.log(html)             
+
+
+                // reducing an array
+
+//      const numbers = [1,-1,2,3];
+
+// //     let sum = 0;
+
+// //     for (let n of numbers )
+// //     sum +=n;
+
+
+// // a=0, c= 1 => a =1
+// // a=1, c=-1 => a= 0
+// // a=0, c=2 => a= 2
+// // a=2, c=3 => a= 5
+//     const sum = numbers.reduce((accumulator, currentValue) =>  accumulator + currentValue,0)
+//     console.log(sum) 
+
