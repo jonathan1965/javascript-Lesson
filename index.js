@@ -283,27 +283,49 @@
 
         //   Exercises 4
 
-const numbers=[1,2,3,4]
+// const numbers=[1,2,3,4]
 
-const output= move(numbers,0,2)
+// const output= move(numbers,0,2)
 
-console.log(output);
+// console.log(output);
 
-function move(array,index,offSet){
+// function move(array,index,offSet){
 
-      const position = index + offSet;
-      if(position>= array.length || position<0 ) {
-              console.error('invalid offset')
-              return;
-      }
+//       const position = index + offSet;
+//       if(position>= array.length || position<0 ) {
+//               console.error('invalid offset')
+//               return;
+//       }
       
-        const output=[...array];
-        const element = output.splice(index,1)[0]
-        output.splice(position ,0 ,element);
-        return output;      
+//         const output=[...array];
+//         const element = output.splice(index,1)[0]
+//         output.splice(position ,0 ,element);
+//         return output;      
       
+// }
 
+                 //   Exercises 5
+const numbers = [1,2,3,4,1];
+
+const count = countOccurences(numbers,-1)
+
+console.log(count);
+
+function countOccurences(array, searchElement) {
+        // let count = 0;
+        // for (let element of array)
+        // if (element === searchElement)
+        // count ++;
+        // return count;
+
+  return array.reduce((accumulator, current) => {
+        const occurence = (current === searchElement) ? 1 : 0;
+        console.log(accumulator,current,searchElement)
+        return accumulator + occurence;
+   },0)
 }
+
+
 
 
 
