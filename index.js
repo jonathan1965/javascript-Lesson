@@ -1,16 +1,16 @@
          // Array
 
 
-// const numbers  = [3,4];
-// // begginning
-// numbers.unshift(1,2);
+//const numbers  = [3,4];
+// begginning
+//numbers.unshift(1,2);
 
-// // end
-// numbers.push(5,6)
+// end
+//numbers.push(5,6)
 
-// // Middle
+// Middle
 // numbers.splice(2,0,7)
-// console.log(numbers)
+//console.log(numbers)
 
     //     Finding Primitive
 
@@ -260,6 +260,27 @@
 //                    return false
 
 // }
+
+
+
+           // Exercises 3
+
+const numbers = [1,2,3,4]
+
+const output = except(numbers,[1,5])
+console.log(output)
+
+function except(array, excluded){
+      const output= [];
+      for (let element of array)
+      if(excluded.includes(element))
+
+       output.push(element);
+
+       return output;
+}
+
+
 
 
  
