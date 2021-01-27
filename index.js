@@ -47,12 +47,33 @@
 // }
 // console.log(sum(1,5 ))
 
+ 
 
-function sum1 (a,b){
-    let total = 0;
-    for (let value of arguments)
-      total += value;
-    return total
+            //   Arguments
+// function sum1 (a,b){
+//     let total = 0;
+//     for (let value of arguments)
+//       total += value;
+//     return total
     
-}
-console.log(sum1(1,5,2))
+// }
+// console.log(sum1(1,5,2))
+  // 
+
+
+
+                     // Rest Operator
+  
+// function sum(...args){
+  
+//  return   args.reduce((a,b) => a+b)
+    
+// } 
+// console.log(sum(1,2,3,4,5,10))
+
+
+function sum(discount, ...prices ){
+    const total =  prices.reduce((a,b) => a+b)
+       return total * (1-discount)
+   } 
+console.log(sum(0.1,20,30,1))
