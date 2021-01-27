@@ -98,3 +98,28 @@
 //      return principle * rate / 100 * years;
 // }
 // console.log(interest(10000,undefined,5));
+
+
+
+            //   getter and Setter
+
+const personal = {
+   firstName: 'Mosh',
+   lastName: 'Hamedani',
+   get fullName () {
+   return  `${personal.firstName}  ${personal.lastName}`
+   },
+   set fullName(value) {
+    const parts = value.split(' ')
+    this.firstName = parts[0],
+    this.lastName = parts[1]
+   }
+}
+
+personal.fullName = 'John Smith'
+console.log(personal); 
+
+//  wew use gettera => to access properties 
+//  setters => change (mutate) them
+
+
