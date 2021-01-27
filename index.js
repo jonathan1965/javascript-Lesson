@@ -72,8 +72,29 @@
 // console.log(sum(1,2,3,4,5,10))
 
 
-function sum(discount, ...prices ){
-    const total =  prices.reduce((a,b) => a+b)
-       return total * (1-discount)
-   } 
-console.log(sum(0.1,20,30,1))
+// function sum(discount, ...prices ){
+//     const total =  prices.reduce((a,b) => a+b)
+//        return total * (1-discount)
+//    } 
+// console.log(sum(0.1,20,30,1))
+
+
+              // Default Parameters
+
+// function interest (principle, rate, years) {
+//   rate = rate || 3;
+//   years = years || 5;
+//      return principle * rate / 100 * years;
+// }
+
+// console.log(interest(10000));
+
+
+
+        // or
+
+
+// function interest (principle, rate = 3, years) {
+//      return principle * rate / 100 * years;
+// }
+// console.log(interest(10000,undefined,5));
