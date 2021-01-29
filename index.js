@@ -126,29 +126,48 @@
 
                 //    Try and catch
 
-const personal = {
-        firstName: 'Mosh',
-        lastName: 'Hamedani',
-        get fullName () {
-        return  `${personal.firstName}  ${personal.lastName}`
-                        },
-        set fullName(value) {
-                if(typeof value !== 'string')
-                throw new Error('value is not a string');
+// const personal = {
+//         firstName: 'Mosh',
+//         lastName: 'Hamedani',
+//         get fullName () {
+//         return  `${personal.firstName}  ${personal.lastName}`
+//                         },
+//         set fullName(value) {
+//                 if(typeof value !== 'string')
+//                 throw new Error('value is not a string');
 
-         const parts = value.split(' ')
-         if(parts.length !==2)
-         throw new Error('Enter a first and last Name')
-          this.firstName = parts[0],
-          this.lastName = parts[1]
-          }
-         }
+//          const parts = value.split(' ')
+//          if(parts.length !==2)
+//          throw new Error('Enter a first and last Name')
+//           this.firstName = parts[0],
+//           this.lastName = parts[1]
+//           }
+//          }
      
-    try {
-        personal.fullName = '';
-    }     
+//     try {
+//         personal.fullName = '';
+//     }     
                      
-   catch (e) {
-        alert(e)
-   }
-  console.log(personal); 
+//    catch (e) {
+//         alert(e)
+//    }
+//   console.log(personal); 
+
+
+
+
+
+
+         // Local vs Global
+
+const color = 'red';
+function start() {
+        const message = 'hi'
+        const color= 'blue'
+        console.log(color)
+}
+
+function stop() {
+        const message='bye'
+}
+start();
