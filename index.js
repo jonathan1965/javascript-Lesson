@@ -103,23 +103,52 @@
 
             //   getter and Setter
 
-const personal = {
-   firstName: 'Mosh',
-   lastName: 'Hamedani',
-   get fullName () {
-   return  `${personal.firstName}  ${personal.lastName}`
-   },
-   set fullName(value) {
-    const parts = value.split(' ')
-    this.firstName = parts[0],
-    this.lastName = parts[1]
-   }
-}
+// const personal = {
+//    firstName: 'Mosh',
+//    lastName: 'Hamedani',
+//    get fullName () {
+//    return  `${personal.firstName}  ${personal.lastName}`
+//    },
+//    set fullName(value) {
+//     const parts = value.split(' ')
+//     this.firstName = parts[0],
+//     this.lastName = parts[1]
+//    }
+// }
 
-personal.fullName = 'John Smith'
-console.log(personal); 
+// personal.fullName = 'John Smith'
+// console.log(personal); 
 
 //  wew use gettera => to access properties 
 //  setters => change (mutate) them
 
+ 
 
+                //    Try and catch
+
+const personal = {
+        firstName: 'Mosh',
+        lastName: 'Hamedani',
+        get fullName () {
+        return  `${personal.firstName}  ${personal.lastName}`
+                        },
+        set fullName(value) {
+                if(typeof value !== 'string')
+                throw new Error('value is not a string');
+
+         const parts = value.split(' ')
+         if(parts.length !==2)
+         throw new Error('Enter a first and last Name')
+          this.firstName = parts[0],
+          this.lastName = parts[1]
+          }
+         }
+     
+    try {
+        personal.fullName = '';
+    }     
+                     
+   catch (e) {
+        alert(e)
+   }
+  console.log(personal); 
