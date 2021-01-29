@@ -192,3 +192,20 @@
 // function sayHi(){
 //         console.log('hi')
 // } // you can add it to the window object
+
+
+
+                //    The This Keyword
+                
+const video = {
+
+        title:'a',
+        tags: ['a','b','c'], 
+        showTags(){
+                this.tags.forEach((tag)=>{
+                  console.log(this.title,tag)
+                },this)
+        }
+}
+
+video.showTags();
