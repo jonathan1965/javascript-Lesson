@@ -197,15 +197,58 @@
 
                 //    The This Keyword
                 
-const video = {
+// const video = {
+
+//         title:'a',
+//         tags: ['a','b','c'], 
+//         showTags(){
+//                 this.tags.forEach((tag)=>{
+//                   console.log(this.title,tag)
+//                 },this)
+//         }
+// }
+
+// video.showTags();
+
+
+
+                 // changing This
+
+ const video = {
 
         title:'a',
         tags: ['a','b','c'], 
         showTags(){
-                this.tags.forEach((tag)=>{
-                  console.log(this.title,tag)
-                },this)
-        }
-}
-
+             
+            this.tags.forEach(function(tag){
+            console.log(this.title,tag)
+                 }.bind(this))
+          }
+ }
+        
 video.showTags();
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function playVideo(a,b) {
+//         console.log(this)
+// }
+
+// playVideo.call({name:'John'},11,2)
+// playVideo.apply({name:'John'},[11,2])
+// playVideo.bind({name:'John'})(); 
+
+ 
