@@ -160,14 +160,35 @@
 
          // Local vs Global
 
-const color = 'red';
-function start() {
-        const message = 'hi'
-        const color= 'blue'
-        console.log(color)
-}
+// const color = 'red';
+// function start() {
+//         const message = 'hi'
+//         const color= 'blue'
+//         console.log(color)
+// }
 
-function stop() {
-        const message='bye'
-}
-start();
+// function stop() {
+//         const message='bye'
+// }
+// start();
+
+
+// function start () {
+//         for(var i=0; i<5; i++ )
+//                 console.log(i)
+//                 console.log(i)
+// }
+// start() 
+
+
+                // var => function-scoped
+                // Es6 (ES2015): let, const => block-scoped
+
+
+// var color = 'red';
+// let age = 30;
+
+
+// function sayHi(){
+//         console.log('hi')
+// } // you can add it to the window object
