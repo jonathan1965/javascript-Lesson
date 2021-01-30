@@ -242,24 +242,24 @@
 
                // exercises 1 Area of Circle
 
- const circle = {
-         radius:1,
-         get area() {
-                 return Math.PI * this.radius *this.radius;
-         }
- }
+//  const circle = {
+//          radius:1,
+//          get area() {
+//                  return Math.PI * this.radius *this.radius;
+//          }
+//  }
 
 
-console.log(circle.area)
-
-
-
+// console.log(circle.area)
 
 
 
 
 
 
+
+
+//  Exercises  2
 
 
 
@@ -272,3 +272,26 @@ console.log(circle.area)
 // playVideo.bind({name:'John'})(); 
 
  
+
+             //  Exercises 3
+
+
+try {
+        const numbers = [1,2,3,4,4];
+        const count = countOccurences(numbers,4)
+        console.log(count);
+}
+
+catch(e) {
+       console.log(e.message) 
+}
+
+function countOccurences(array, searchElement) {
+        if(!Array.isArray(array))
+        throw new Error('invalid array.!');
+  return array.reduce((accumulator, current) => {
+        const occurence = (current === searchElement) ? 1 : 0;
+        console.log(accumulator,current,searchElement)
+        return accumulator + occurence;
+   },0)
+}
