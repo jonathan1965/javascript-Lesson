@@ -214,22 +214,30 @@
 
                  // changing This
 
- const video = {
+//  const video = {
 
-        title:'a',
-        tags: ['a','b','c'], 
-        showTags(){
+//         title:'a',
+//         tags: ['a','b','c'], 
+//         showTags(){
              
-            this.tags.forEach(function(tag){
-            console.log(this.title,tag)
-                 }.bind(this))
-          }
- }
+//             this.tags.forEach(function(tag){
+//             console.log(this.title,tag)
+//                  }.bind(this))
+//           }
+//  }
         
-video.showTags();
+// video.showTags();
         
 
 
+                      // exercises 1
+
+console.log(sum([1,2,3,4]))
+function sum(...items){
+        if (items.length === 1 && Array.isArray(items[0]))
+        items = [...items[0]]
+      return  items.reduce((a,b)=>a+b);
+}
 
 
 
